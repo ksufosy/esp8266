@@ -6,6 +6,11 @@ ESP8266WebServer server;
 char* ssid = "";
 char* password = "";
 
+int gpio0_pin = 0; 
+int gpio1_pin = 2;
+
+string webhtml = "";
+
 void setup() {
   // put your setup code here, to run once:
   WiFi.begin(ssid,password);
