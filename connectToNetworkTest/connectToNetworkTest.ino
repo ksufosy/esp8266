@@ -2,7 +2,7 @@
 #include <ESP8266WebServer.h>
 
 ESP8266WebServer server;
-
+//insert Wifi information here. 
 char* ssid = "";
 char* password = "";
 
