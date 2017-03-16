@@ -11,8 +11,12 @@ int gpio1_pin = 2;
 
 string webhtml = "";
 
+
 void setup() {
   // put your setup code here, to run once:
+  webhtml += "<h1>ESP8266 Webserver</h1><p>Pin 1<a href=\"pin1On\"><button>ON</button></a><\p><a href=\"pin1Off\"><button>OFF<\button><\a><\p>
+  webhtml += "<p>Pin 2<a href=\"pin2On\"><button>ON<\button><\a><\p><a href=\"pin2Off\"><button>OFF</button><\a><\p>
+  
   WiFi.begin(ssid,password);
   Serial.begin(115200);
   while(WiFi.status()!= WL_CONNECTED)
